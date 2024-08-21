@@ -2,7 +2,7 @@ require('dotenv').config();
 const process = require('process');
 const username = process.env.WEB_USERNAME || "admin";
 const password = process.env.WEB_PASSWORD || "password";
-const UUID = process.env.UUID || "de04add9-5c68-8bab-950c-08cd5320df18";
+const UUID = process.env.UUID || "fd326c54-04a6-4284-bbeb-4849301f70ad";
 const os = require('os');
 const path = require('path');
 const express = require("express");
@@ -47,7 +47,7 @@ app.use((req, res, next) => {
 
 const USERNAME = os.userInfo().username;
 const USERNAME_DOMAIN = USERNAME.toLowerCase().replace(/[^a-z0-9-]/g, '');
-const WORKDIR = path.join('/home', USERNAME, 'domains', `${USERNAME_DOMAIN}.serv00.net`, 'public_nodejs');
+const WORKDIR = path.join('/home', USERNAME, 'domains', `$serv00.jszzwen.eu.org`, 'public_nodejs');
 process.chdir(WORKDIR);
 
 app.get("/info", function (req, res) {
